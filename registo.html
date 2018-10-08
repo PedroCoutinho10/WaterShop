@@ -1,0 +1,128 @@
+
+<link href="css/login.css" rel="stylesheet" id="bootstrap-css">
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WaterShop</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- All the files that are required -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login/Registo</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+
+      <h1 class="my-4"> <a href="index.html"> <img src="data/WaterShop.png" height="200" width="200"></a></h1>
+
+
+    </div>
+
+<!-- REGISTRATION FORM -->
+<div class="text-center" style="padding:50px 0">
+  <div class="logo">register</div>
+  <!-- Main Form -->
+  <div class="login-form-1">
+    <form id="register-form" class="text-left" action="registar.php" method='POST'>
+      <div class="login-form-main-message"></div>
+      <div class="main-login-form">
+        <div class="login-group">
+          <div class="form-group">
+            <label for="reg_nome" class="sr-only">Nome</label>
+            <input type="text" class="form-control" id="reg_nome" name="reg_nome" placeholder="Nome">
+          </div>
+          <div class="form-group">
+            <label for="reg_password" class="sr-only">Password</label>
+            <input type="password" class="form-control" id="reg_password" name="reg_password" placeholder="password">
+          </div>
+          <div class="form-group">
+            <label for="reg_password_confirm" class="sr-only">Password Confirm</label>
+            <input type="password" class="form-control" id="reg_password_confirm" name="reg_password_confirm" placeholder="confirm password">
+          </div>
+
+          <div class="form-group">
+            <label for="reg_email" class="sr-only">Email</label>
+            <input type="text" class="form-control" id="reg_email" name="reg_email" placeholder="email">
+          </div>
+          <div class="form-group">
+            <label for="reg_telemovel" class="sr-only">Telemovel</label>
+            <input type="text" class="form-control" id="reg_telemovel" name="reg_telemovel" placeholder="ex:900000000">
+          </div>
+          <div class="form-group">
+            <label for="reg_localizacao" class="sr-only">Localização</label>
+            <input type="text" class="form-control" id="reg_localizacao" name="reg_localizacao" placeholder="ex:Oliveira de Azeméis">
+          </div>
+
+
+
+          <div class="form-group login-group-checkbox">
+            <input type="checkbox" class="" id="reg_agree" name="reg_agree">
+            <label for="reg_agree">i agree with <a href="#">terms</a></label>
+          </div>
+        </div>
+        <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+      </div>
+      <div class="etc-login-form">
+        <p>already have an account? <a href="login.html">login here</a></p>
+      </div>
+    </form>
+  </div>
+  <!-- end:Main Form -->
+</div></div>
+
+</div>
+
+
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+</body>
+
+</html>

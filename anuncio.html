@@ -1,0 +1,139 @@
+<?php
+$link = mysqli_connect("127.0.0.1", "root", "", "WaterShop");
+if (!$link) {
+    echo "Error: Falha ao conectar-se com o banco de dados MySQL." . PHP_EOL;
+    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+    exit;
+}
+?>
+<link href="css/login.css" rel="stylesheet" id="bootstrap-css">
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WaterShop</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!-- All the files that are required -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login/Registo</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <h1 class="my-4"> <a href="index.html"> <img src="data/WaterShop.png" height="200" width="200"></a></h1>
+    </div>
+
+<!-- REGISTRATION FORM -->
+<div class="text-center" style="padding:50px 0">
+  <div class="logo">Novo Anúncio</div>
+  <!-- Main Form -->
+  <div class="login-form-1">
+
+    <form id="register-form" class="text-left" action="anunciar.php" method='POST'>
+      <div class="login-form-main-message"></div>
+      <div class="main-login-form">
+        <div class="login-group">
+          <div class="form-group">
+            <label for="reg_titulo" class="sr-only">Título</label>
+            <input type="text" class="form-control" id="reg_titulo" name="reg_titulo" placeholder="Titulo">
+          </div>
+          <div class="form-group">
+            <label for="reg_categoria" class="sr-only">Categoria</label>
+
+            <select name="reg_categoria" class="form-control" id="reg_categoria" name="reg_categoria">
+              <option value="" selected disabled hidden>Categoria</option>
+              <option value="Surf">Surf</option>
+              <option value="Bodyboard">Bodyboard</option>
+              <option value="BodySurf">BodySurf</option>
+            </select>
+
+
+          </div>
+
+          <div class="form-group">
+            <label for="reg_preco" class="sr-only">Preco</label>
+            <input type="text" class="form-control" id="reg_preco" name="reg_preco" placeholder="Preço">
+          </div>
+          <div class="form-group">
+            <label for="reg_descricao" class="sr-only">Descrição</label>
+            <input type="text" class="form-control" id="reg_descricao" name="reg_descricao" placeholder="Descrição">
+          </div>
+          <div class="form-group">
+            <label for="reg_imagem1" class="sr-only">Imagem1</label>
+            <input type="file"  id="reg_imagem1" name="reg_imagem1" accept="image/*">
+          </div>
+            <div class="form-group">
+                <label for="reg_imagem2" class="sr-only">Imagem2</label>
+                <input type="file"  id="reg_imagem2" name="reg_imagem2" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="reg_imagem3" class="sr-only">Imagem</label>
+                <input type="file"  id="reg_imagem3" name="reg_imagem3" accept="image/*">
+            </div>
+        </div>
+         <button href="index.html" type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+      </div>
+    </form>
+  </div>
+  <!-- end:Main Form -->
+</div></div>
+</div>
+
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+</body>
+
+</html>
